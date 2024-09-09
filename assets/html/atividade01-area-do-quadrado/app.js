@@ -1,4 +1,4 @@
-const formMain = document.getElementById('form-main');
+const formMain = document.getElementById('form-square');
 formMain.addEventListener('submit', function(event) {
     console.log ('html acess success');
     
@@ -7,29 +7,25 @@ event.preventDefault();
     console.log ('prevent defaul action: success');
  
 // pega o valor como string
-let valueB1 = document.getElementById('input-b1').value;
-let valueB2 = document.getElementById('input-b2').value;
-let valueH = document.getElementById('input-h').value;
+let squareValue = document.getElementById('form-square-side').value;
 
 // Troca virgula por ponto se necessário
-let b1Coma = valueB1.replace(/,/g, ".");
-let b2Coma = valueB2.replace(/,/g, ".");
-let hComa = valueH.replace(/,/g, ".");
+let squareComa = squareValue.replace(/,/g, ".");
 
 // transforma em número
-let b1Side = Number(b1Coma);
-let b2Side = Number(b2Coma);
-let hHeight = Number(hComa);
+let squareSide = Number(squareComa);
     console.log ('normalize number: success');
 
 // calcula a área
-let resultFinal = ((b1Side + b2Side)/2)*hHeight;
+let squareArea = (squareSide ** 2);
     console.log ('calculate area: success');
 
 // imprime no console
-console.log('O  primeiro valor (B) digitado foi: ' + b1Side+ ' cm');
-console.log('O  segundo valor (b) digitado foi: ' + b2Side+ ' cm');
-console.log('O  terceiro valor (h) digitado foi: ' + hHeight+ ' cm');
+console.log('O valor digitado foi: ' + squareSide+ ' cm');
+console.log('A área do quadrado é de: ' + squareArea+ ' cm²');
+console.log('A área do quadrado é de: ' + (squareArea * 100) + ' m²');
+
+// xxx
 
 // manda o valor para interface
 document.getElementById('final-result').classList.remove('is-hidden');
@@ -40,7 +36,7 @@ document.getElementById('final-result').scrollIntoView({
 });
 
 // manda o valor para interface
-document.getElementById('div-text-result').innerHTML = resultFinal.toFixed(2) + ' cm²';
+document.getElementById('div-area').innerHTML = (squareArea.toFixed(2).replace(/\.00$/, '')) + ' cm²';
     console.log ('print result on html: success');
 
 });

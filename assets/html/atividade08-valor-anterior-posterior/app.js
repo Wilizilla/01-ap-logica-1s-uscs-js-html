@@ -45,12 +45,12 @@ document.getElementById('final-result').scrollIntoView({
 });
 
 // manda o valor para interface
-document.getElementById('div-text-result').innerHTML = (resultFinal.toFixed(2));
+document.getElementById('div-text-result').innerHTML = (resultFinal.toFixed(2).replace(/\.00$/, ''));
     console.log ('print result on html: success');
     
-document.getElementById('div-text-result-2').innerHTML = (resultAdd.toFixed(2));
+document.getElementById('div-text-result-2').innerHTML = (resultAdd.toFixed(2).replace(/\.00$/, ''));
     console.log ('print result on html: success');
 
-document.getElementById('div-text-result-3').innerHTML = (resultSub.toFixed(2));
+document.getElementById('div-text-result-3').innerHTML = (resultSub.toFixed(2).replace(/\.00$/, ''));
     console.log ('print result on html: success');
 });

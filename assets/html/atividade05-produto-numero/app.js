@@ -38,6 +38,6 @@ document.getElementById('final-result').scrollIntoView({
 });
 
 // manda o valor para interface
-document.getElementById('div-text-result').innerHTML = (resultFinal.toFixed(2));
+document.getElementById('div-text-result').innerHTML = (resultFinal.toFixed(2).replace(/\.00$/, ''));
     console.log ('print result on html: success');
 });
