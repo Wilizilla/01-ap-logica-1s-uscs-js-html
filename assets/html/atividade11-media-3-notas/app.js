@@ -5,12 +5,12 @@ formMain.addEventListener('submit', function(event) {
 // evita o comportamento padrão do evento submit
 event.preventDefault(); 
     console.log ('prevent defaul action: success');
- 
+    
 // pega o valor como string
 let grade01 = document.getElementById('input-grade01').value;
 let grade02 = document.getElementById('input-grade02').value;
 let grade03 = document.getElementById('input-grade03').value;
-
+    console.log ('catch inputs: success');
 
 // Troca virgula por ponto se necessário
 let grade01Coma = grade01.replace(/,/g, ".");
