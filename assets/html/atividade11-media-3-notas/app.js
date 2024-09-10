@@ -1,10 +1,10 @@
 const formMain = document.getElementById('form-main');
 formMain.addEventListener('submit', function(event) {
-    console.log ('html acess success');
+    console.log ('html access success');
     
 // evita o comportamento padrão do evento submit
 event.preventDefault(); 
-    console.log ('prevent defaul action: success');
+    console.log ('prevent default action: success');
     
 // pega o valor como string
 let grade01 = document.getElementById('input-grade01').value;

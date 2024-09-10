@@ -1,14 +1,14 @@
 const formMain = document.getElementById('form-main');
 formMain.addEventListener('submit', function(event) {
-    console.log ('html acess success');
+    console.log ('html access success');
     
 // evita o comportamento padrão do evento submit
 event.preventDefault(); 
-    console.log ('prevent defaul action: success');
+    console.log ('prevent default action: success');
  
 // pega o valor como string
 let inputNum = document.getElementById('input-num').value;
-
+TextDecoderStream
 // Troca virgula por ponto se necessário
 let inputComa = inputNum.replace(/,/g, ".");
     console.log ('coma adjustment: success');
