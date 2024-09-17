@@ -14,4 +14,4 @@ Cada exercício está em uma pasta numerada de 1 a 8 contendo:
 • App.js = **arquivo js com o código do exercício**
 • Index.html = **html básico sem interface apenas com console, alert, confirm e prompt.**
 
-add branch teste 7
+add branch teste 9
